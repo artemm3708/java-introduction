@@ -25,7 +25,7 @@ public class Variables {
         double myDouble = 687290.92749240;
         System.out.println(myDouble);
 
-        boolean isValid = false;
+        boolean isValid = true;
         System.out.println(isValid);
 
         char myChar = '~';
