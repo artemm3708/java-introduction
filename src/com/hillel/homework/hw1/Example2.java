@@ -1,6 +1,6 @@
 package com.hillel.homework.hw1;
 
-public class example2 {
+public class Example2 {
 
     public static void main(String[] args) {
 
