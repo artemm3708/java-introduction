@@ -56,6 +56,9 @@ public class Switch {
             case 12:
                 System.out.println("Dec");
                 break;
+            default:
+                System.out.println("unknown month number");
+
         }
     }
 }
