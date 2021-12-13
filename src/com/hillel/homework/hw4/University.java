@@ -36,6 +36,18 @@ public class University {
 
     }
 
+    public static void studentProgress(double averageGrade) {
+        if (averageGrade >= 10 && averageGrade <= 12) {
+            System.out.println("Поздравляем, Вы получаете повышенную стипендию!");
+        } else if (averageGrade >= 8 && averageGrade < 10) {
+            System.out.println("Поздравляем, Вы получаете обычную стипендию!");
+        } else if (averageGrade < 8 && averageGrade >= 1) {
+            System.out.println("К сожалению, Вы не получаете стипендию");
+        }
+
+
+    }
+
     public static void falseInput(int gradeMath, int gradeEnglish, int gradeUkrainian, int gradePhysics, int gradeBiology) {
 
         if (gradeMath > 12 || gradeMath < 1) {
@@ -53,19 +65,6 @@ public class University {
         if (gradeBiology > 12 || gradeBiology < 1) {
             System.out.println("Проверьте правильность введенных данных");
         }
-    }
-
-
-    public static void studentProgress(double averageGrade) {
-        if (averageGrade >= 10 && averageGrade <= 12) {
-            System.out.println("Поздравляем, Вы получаете повышенную стипендию!");
-        } else if (averageGrade >= 8 && averageGrade < 10) {
-            System.out.println("Поздравляем, Вы получаете обычную стипендию!");
-        } else if (averageGrade < 8 && averageGrade >= 1) {
-            System.out.println("К сожалению, Вы не получаете стипендию");
-        }
-
-
     }
 
 }
