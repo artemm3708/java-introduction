@@ -11,17 +11,29 @@ public class Calculator {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         int a = Integer.parseInt(reader.readLine());
-        char b = (char)reader.read();
-        int c = Integer.parseInt(reader.readLine());
-        int result = a + b + c;
-        System.out.println(result);
+        char c = '+';
+        int b = Integer.parseInt(reader.readLine());
+
+        int sum = a + signs(c) + b;
+        System.out.println(sum);
 
     }
 
-    public static void signs() {
+    public static char signs(char c) {
 
+        if (c == '+') {
+            return '+';
+        } else if (c =='-') {
+            return '-';
+        } else if (c == '*') {
+            return '*';
+        } else {
+            return '/';
+        }
 
     }
 
 
 }
+
+
