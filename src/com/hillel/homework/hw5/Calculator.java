@@ -16,6 +16,9 @@ public class Calculator {
         int result = a + b + c;
         System.out.println(result);
 
+    }
+
+    public static void signs() {
 
 
     }
