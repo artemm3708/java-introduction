@@ -3,6 +3,7 @@ package com.hillel.homework.hw5;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.Reader;
 
 public class Calculator {
 
@@ -10,22 +11,26 @@ public class Calculator {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        int a = Integer.parseInt(reader.readLine());
-        char c = '+';
-        int b = Integer.parseInt(reader.readLine());
+        System.out.println("Введите число");
+        double a = Integer.parseInt(reader.readLine());
+        System.out.println("Введите операцию");
+        String ch = reader.readLine();
+        char c = signs(ch);
+        System.out.println("Введите число");
+        double b = Integer.parseInt(reader.readLine());
 
-        int sum = a + signs(c) + b;
-        System.out.println(sum);
+        calculation(a, b, c);
+        System.out.println("Результат: " + calculation(a, b, c));
 
     }
 
-    public static char signs(char c) {
+    public static char signs(String c) {
 
-        if (c == '+') {
+        if (c.equals("+")) {
             return '+';
-        } else if (c =='-') {
+        } else if (c.equals("-")) {
             return '-';
-        } else if (c == '*') {
+        } else if (c.equals("*")) {
             return '*';
         } else {
             return '/';
@@ -33,7 +38,21 @@ public class Calculator {
 
     }
 
+    public static double calculation(double a, double b, char c) {
+        double result;
+        if (c == '+') {
+            return result = a + b;
+        } if (c == '-') {
+            return result = a - b;
+        } if (c == '*') {
+            return result =  a * b;
+        } else {
+            return result = a / b;
+            }
+        }
 
-}
+
+    }
+
 
 
