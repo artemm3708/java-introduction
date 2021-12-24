@@ -28,12 +28,12 @@ public class Money {
         double ccc = (cc / 100) * 5;
         System.out.println(ccc);
 
-        double everageA = aa - aaa;
-        double everageB = bb - bbb;
-        double everageC = cc - ccc;
+        double averageA = aa - aaa;
+        double averageB = bb - bbb;
+        double averageC = cc - ccc;
 
 
-        double everage = (everageA + everageB + everageC) / 3;
+        double everage = (averageA + averageB + averageC) / 3;
         System.out.println(everage);
 
 
