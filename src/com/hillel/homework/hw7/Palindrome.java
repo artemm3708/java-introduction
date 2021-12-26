@@ -10,28 +10,32 @@ public class Palindrome {
 
     public static void main(String[] args) throws IOException {
 
+        String str = READER.readLine();
+        String reverse = new StringBuffer(str).reverse().toString();
 
-        String[] sentence = new String[6];
-
-        fillArray(sentence);
-
-        isArrayPalindrome(sentence);
+        isArrayPalindrome(str, reverse);
 
 
     }
 
-    private static void fillArray(String[] sentence) throws IOException {
-        for (int i = 0; i < sentence.length; i++) {
-             sentence[i] = READER.readLine();
-         }
+    private static String reverseString(String str) throws IOException {
+        char[] array = str.toCharArray();
+        String result = "";
+        for (int i = array.length - 1; i >= 0; i--) {
+            result += array[i];
+        }
+        return result;
     }
 
-    private static void isArrayPalindrome(String[] sentence) {
-        if (sentence[0].equals(sentence[5]) && sentence[1].equals(sentence[4]) && sentence[2].equals(sentence[3])) {
+    public static void isArrayPalindrome(String str, String reverse) throws IOException {
+        if (str.equalsIgnoreCase(reverse)) {
             System.out.println("yes");
         } else {
             System.out.println("no");
         }
+
+
+
     }
 
 }
