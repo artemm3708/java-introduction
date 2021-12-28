@@ -10,31 +10,32 @@ public class Palindrome {
 
     public static void main(String[] args) throws IOException {
 
+        System.out.println("Напишите предложение: ");
         String str = READER.readLine();
-        String reverse = new StringBuffer(str).reverse().toString();
+        str = str.replaceAll("\\s+", "");
+        System.out.println(str);
 
-        isArrayPalindrome(str, reverse);
+        System.out.println(reverseString(str));
+        isArrayPalindrome(str, reverseString(str));
 
 
     }
 
-    private static String reverseString(String str) throws IOException {
+    public static String reverseString(String str) {
         char[] array = str.toCharArray();
-        String result = "";
+        String reverse = "";
         for (int i = array.length - 1; i >= 0; i--) {
-            result += array[i];
+            reverse += array[i];
         }
-        return result;
+        return reverse = reverse.replaceAll("\\s+", "");
     }
 
     public static void isArrayPalindrome(String str, String reverse) throws IOException {
         if (str.equalsIgnoreCase(reverse)) {
-            System.out.println("yes");
+            System.out.println("Ваша строка палиндром");
         } else {
-            System.out.println("no");
+            System.out.println("Ваша строка не является палиндромом");
         }
-
-
 
     }
 
