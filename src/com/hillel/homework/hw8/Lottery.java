@@ -11,8 +11,8 @@ public class Lottery {
 
     public static void main(String[] args) throws IOException {
 
-        int[] company = new int[10];
-        int[] player = new int[10];
+        int[] company = new int[7];
+        int[] player = new int[7];
 
         companyArray(company);
         playerArray(player);
