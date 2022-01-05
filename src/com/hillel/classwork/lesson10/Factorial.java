@@ -14,7 +14,6 @@ public class Factorial {
             return number;
         }
         return number * factorial(number - 1);
-
     }
 
 }

@@ -20,6 +20,7 @@ public class Task1 {
             System.out.println();
         }
 
+
         String str = "*";
         for (int i = 0; i < 10; i++) {
             System.out.println(str);

@@ -7,7 +7,7 @@ public class Binary {
         int i = 45;
         System.out.println(i + " " + Integer.toBinaryString(i));
 
-        int  result = ~i;
+        int result = ~i;
         System.out.println(result + " " + Integer.toBinaryString(result));
 
         int i1 = 56;
@@ -18,7 +18,6 @@ public class Binary {
 
         int or = i | i1;
         System.out.println(or + " " + Integer.toBinaryString(or));
-
 
     }
 
