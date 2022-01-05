@@ -27,7 +27,6 @@ public class Task1 {
             str = str + "*";
         }
 
-
     }
 
 }

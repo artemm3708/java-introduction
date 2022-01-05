@@ -6,7 +6,6 @@ public class Factorial {
 
         System.out.println(factorial(5));
 
-
     }
 
     public static int factorial(int number) {
