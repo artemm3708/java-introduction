@@ -4,9 +4,9 @@ import java.util.Random;
 
 public class PasswordConditions {
 
+    Random r = new Random();
     char ch = '_';
     int length;
-    Random r = new Random();
 
     public PasswordConditions() {
         System.out.println("Your password: ");
@@ -32,9 +32,8 @@ public class PasswordConditions {
 
     public char whatSymbol() {
         int i = (int) (Math.random() * (5 - 1) + 1);
-
         if (i == 1) {
-           return smallLetter();
+            return smallLetter();
         } else if (i == 2) {
             return bigLetter();
         } else if (i == 3) {
@@ -44,8 +43,6 @@ public class PasswordConditions {
         }
         return whatSymbol();
     }
-
-
 
 
 }

@@ -17,7 +17,7 @@ public class PrintPassword {
         if (haveSmallLetters == true && haveBigLetters == true && haveNUmber == true) {
             System.out.println(finalPassword);
         } else {
-            System.out.println("Try again: " + finalPassword);;
+            GeneratePassword.newPassword(password);
         }
     }
 }
