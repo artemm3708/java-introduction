@@ -27,7 +27,5 @@ public class JavaMath {
         int r2 =  (int) ((random * (max - min)) + min);
         System.out.println(r2);
 
-
-
     }
 }
