@@ -8,6 +8,7 @@ public class Main {
 
         //sout
         System.out.println("Hello in Idea");
+        System.out.println("1" + 1 + 1);
     }
 
 }
