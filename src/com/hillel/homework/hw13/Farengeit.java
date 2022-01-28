@@ -11,5 +11,4 @@ public class Farengeit extends Degrees {
         double c = (this.degrees * 1.8 + 32);
         System.out.println("Температура по Фаренгейту равна: " + c);
     }
-
 }

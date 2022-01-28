@@ -17,7 +17,6 @@ public class MainConvert {
         String userType = READER.readLine();
 
         convert(defineDegrees(userInput, userType));
-
     }
 
     private static void convert(Converter converter) {

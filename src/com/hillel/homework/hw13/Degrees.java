@@ -5,7 +5,6 @@ public abstract class Degrees implements Converter {
     protected int degrees;
 
     public Degrees() {
-
     }
 
     @Override

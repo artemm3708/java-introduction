@@ -11,5 +11,4 @@ public class Kelvin extends Degrees {
         double c = this.degrees + 273.15;
         System.out.println("Температура по Кельвину равна: " + c);
     }
-
 }
