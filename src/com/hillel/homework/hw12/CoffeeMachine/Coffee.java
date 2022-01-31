@@ -1,15 +1,12 @@
 package com.hillel.homework.hw12.CoffeeMachine;
 
-public class Coffee {
+public abstract class Coffee {
 
-    private int price;
+    int price;
 
-    public Coffee(int price) {
-        this.price = price;
+    public int price() {
+        return this.price;
     }
 
-    public void cook() {
-        System.out.println("Ваш напиток готов");
-    }
-
+    public abstract void cook();
 }
